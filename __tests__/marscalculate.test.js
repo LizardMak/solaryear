@@ -1,4 +1,4 @@
-import { marsBirthdayCountdown } from "../src/mercurycalculate";
+import { marsBirthdayCountdown } from "../src/marscalculate";
 import { userInputs } from "../src/inputdata";
 
 describe('marsBirthdayCountdown', () => {
