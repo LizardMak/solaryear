@@ -10,4 +10,11 @@ describe('venusBirthdayCountdown', () => {
     const venusYearsUntil = venusBirthdayCountdown(userData.inputAge, userData.inputTargetAge);
     expect(venusYearsUntil).toEqual("16.129032258064516 years until birthday!")
   })
+  test('It should calculate how many years ago a birthday was if the current age is larger than the target', () => {
+    const userData = new userInputs();
+    userData.inputAge = 31;
+    userData.inputTargetAge = 21;
+    const venusYearsUntil = venusBirthdayCountdown(userData.inputAge, userData.inputTargetAge);
+    expect(venusYearsUntil).toEqual("birthday was 16.129032258064516 years ago!")
+  })
 })
