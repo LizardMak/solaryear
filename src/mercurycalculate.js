@@ -1,11 +1,13 @@
 
 export function mercuryBirthdayCountdown(currentAge, targetAge) {
-  if (currentAge > targetAge) {
-    return "error";
-  } else {
     const yearDiff = targetAge - currentAge;
     const mercuryCountdown = yearDiff / .24;
     console.log(mercuryCountdown);
-    return mercuryCountdown;
+    if (mercuryCountdown > 0) {
+      return mercuryCountdown + " years until birthday!"
+    } else {
+    const mercuryNumString = mercuryCountdown.toString();
+    const mercuryPastString = mercuryNumString.replace("-", "");
+    return "birthday was " + mercuryPastString + " years ago!"
+    }
   }
-}

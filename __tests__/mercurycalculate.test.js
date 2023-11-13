@@ -8,13 +8,13 @@ describe('mercuryBirthdayCountdown', () => {
     userData.inputAge = 21;
     userData.inputTargetAge = 31;
     const mercuryYearsUntil = mercuryBirthdayCountdown(userData.inputAge, userData.inputTargetAge);
-    expect(mercuryYearsUntil).toEqual(41.66666666666667)
+    expect(mercuryYearsUntil).toEqual("41.66666666666667 years until birthday!")
   }) 
-  test('It should return an error message if the current age is larger than the target age', () => {
+  test('It should calculate how many years ago a birthday was if the current age is larger than the target', () => {
     const userData = new userInputs();
     userData.inputAge = 31;
     userData.inputTargetAge = 21;
     const mercuryYearsUntil = mercuryBirthdayCountdown(userData.inputAge, userData.inputTargetAge);
-    expect(mercuryYearsUntil).toEqual("error");
+    expect(mercuryYearsUntil).toEqual("birthday was 41.66666666666667 years ago!");
   })
 })
