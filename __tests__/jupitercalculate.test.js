@@ -8,6 +8,6 @@ describe('jupiterBirthdayCountdown', () => {
     userData.inputAge = 21;
     userData.inputTargetAge = 31;
     const jupiterYearsUntil = jupiterBirthdayCountdown(userData.inputAge, userData.inputTargetAge);
-    expect(jupiterYearsUntil).toEqual("5.319148936170213 years until birthday!")
+    expect(jupiterYearsUntil).toEqual("0.8431703204047218 years until birthday!")
   })
 }) 
