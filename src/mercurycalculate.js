@@ -5,7 +5,7 @@ export function mercuryBirthdayCountdown(currentAge, targetAge) {
   } else {
     const yearDiff = targetAge - currentAge;
     const mercuryCountdown = yearDiff / .24;
-    if (mercuryCountdown >= 0) {
+    if (mercuryCountdown > 0) {
       return mercuryCountdown + " years until birthday!";
     } else {
       const mercuryNumString = mercuryCountdown.toString();
