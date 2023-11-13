@@ -17,4 +17,11 @@ describe('marsBirthdayCountdown', () => {
     const marsYearsUntil = marsBirthdayCountdown(userData.inputAge, userData.inputTargetAge);
     expect(marsYearsUntil).toEqual("birthday was 5.319148936170213 years ago!");
   })
+  test('It should return an error if input digits are negative', () => {
+    const userData = new userInputs();
+    userData.inputAge = -21;
+    userData.inputTargetAge = -31;
+    const marsYearsUntil = marsBirthdayCountdown(userData.inputAge, userData.inputTargetAge);
+    expect(marsYearsUntil).toEqual("ERROR: INVALID INPUTS")
+  })
 })
