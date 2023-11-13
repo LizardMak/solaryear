@@ -12,7 +12,7 @@ describe('mercuryCalculate', () => {
 
 describe('mercuryBirthdayCountdown', () => {
 
-  test('It should translate current age and target age to mercury years and return the years until target mercury year', () => {
+  test('It should translate the difference between the current and target age into mercury years', () => {
     const currentAge = 21;
     const targetAge = 31;
     const mercuryYearsUntil = mercuryBirthdayCountdown(currentAge, targetAge);
