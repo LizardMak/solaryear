@@ -17,4 +17,11 @@ describe('mercuryBirthdayCountdown', () => {
     const mercuryYearsUntil = mercuryBirthdayCountdown(userData.inputAge, userData.inputTargetAge);
     expect(mercuryYearsUntil).toEqual("birthday was 41.66666666666667 years ago!");
   })
+  test('It should return an error if input digits are negative', () => {
+    const userData = new userInputs();
+    userData.inputAge = -21;
+    userData.inputTargetAge = -31;
+    const mercuryYearsUntil = mercuryBirthdayCountdown(userData.inputAge, userData.inputTargetAge);
+    expect(mercuryYearsUntil).toEqual("ERROR: INVALID INPUTS")
+  })
 })
