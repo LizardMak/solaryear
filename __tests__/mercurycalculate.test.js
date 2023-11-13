@@ -18,4 +18,10 @@ describe('mercuryBirthdayCountdown', () => {
     const mercuryYearsUntil = mercuryBirthdayCountdown(currentAge, targetAge);
     expect(mercuryYearsUntil).toEqual(41.66666666666667)
   }) 
+  test('It should return an error message if the current age is larger than the target age', () => {
+    const currentAge = 31;
+    const targetAge = 21;
+    const mercuryYearsUntil = mercuryBirthdayCountdown(currentAge, targetAge);
+    expect(mercuryYearsUntil).toEqual("error");
+  })
 })
