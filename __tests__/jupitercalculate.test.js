@@ -14,7 +14,7 @@ describe('jupiterBirthdayCountdown', () => {
     const userData = new userInputs();
     userData.inputAge = 31;
     userData.inputTargetAge = 21;
-    const marsYearsUntil = marsBirthdayCountdown(userData.inputAge, userData.inputTargetAge);
-    expect(marsYearsUntil).toEqual("birthday was 0.8431703204047218 years ago!");
+    const jupiterYearsUntil = jupiterBirthdayCountdown(userData.inputAge, userData.inputTargetAge);
+    expect(jupiterYearsUntil).toEqual("birthday was 0.8431703204047218 years ago!");
   })
 }) 
