@@ -20,7 +20,7 @@ module.exports = {
     new ESLintPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'husk',
+      title: 'solaryear',
       template: './src/index.html',
       inject: 'body'
     })
