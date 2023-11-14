@@ -8,7 +8,9 @@ export class UserInputs {
   return marsAge;
   }
   marsMathNotPresent() {
-    
+  const yearDiff = this.inputTargetAge - this.inputAge;
+  const marsYearDiff = yearDiff / 1.88;
+  return marsYearDiff;
   }
 }
 
