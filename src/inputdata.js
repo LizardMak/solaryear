@@ -4,7 +4,8 @@ export class UserInputs {
     this.inputTargetAge = inputTargetAge;
   }
   marsMathCurrent() {
- 
+  const marsAge = this.inputAge / 1.88;
+  return marsAge;
   }
 }
 
