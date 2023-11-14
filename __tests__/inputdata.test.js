@@ -8,3 +8,12 @@ describe('marsMathCurrent', () => {
     expect(currentAgeMars).toEqual(11.170212765957448)
   })
 })
+
+describe('marsMathNotPresent', () => {
+
+  test('It should return how many mars years from the current age to the target age', () => {
+    const userData = new UserInputs(21, 31);
+    const yearDiff = userData.marsMathNotPresent();
+    expect(yearDiff).toEqual(5.319148936170213)
+  })
+})

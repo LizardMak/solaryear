@@ -7,5 +7,8 @@ export class UserInputs {
   const marsAge = this.inputAge / 1.88;
   return marsAge;
   }
+  marsMathNotPresent() {
+    
+  }
 }
 
