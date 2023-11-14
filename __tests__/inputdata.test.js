@@ -2,7 +2,7 @@ import { UserInputs } from "../src/inputdata";
 
 describe('marsMathCurrent', () => {
 
-  test('It should return the current age in mars years', () => {
+  test('It should return the current age in Mars years', () => {
     const userData = new UserInputs(21, 31);
     const currentAgeMars = userData.marsMathCurrent();
     expect(currentAgeMars).toEqual(11.170212765957448)
@@ -25,9 +25,18 @@ describe('marsMathNotPresent', () => {
 
 describe('jupiterMathCurrent', () => {
 
-  test('It should return the current age in mars years', () => {
+  test('It should return the current age in Jupiter years', () => {
     const userData = new UserInputs(21, 31);
     const currentAgeMars = userData.jupiterMathCurrent();
     expect(currentAgeMars).toEqual(1.7706576728499157)
+  })
+})
+
+describe('jupiterMathNotPresent', () => {
+
+  test('It should return how many jupiter years from the current age to the target age', () => {
+    const userData = new UserInputs(21, 31);
+    const yearDiff = userData.jupiterMathNotPresent();
+    expect(yearDiff).toEqual("0.8431703204047218 Jupiter years until birthday")
   })
 })

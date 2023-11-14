@@ -22,5 +22,8 @@ export class UserInputs {
   const jupiterAge = this.inputAge / 11.86;
   return jupiterAge
   }
+  jupiterMathNotPresent() {
+    
+  }
 }
 
