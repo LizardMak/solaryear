@@ -10,7 +10,13 @@ export class UserInputs {
   marsMathNotPresent() {
   const yearDiff = this.inputTargetAge - this.inputAge;
   const marsYearDiff = yearDiff / 1.88;
+  if (marsYearDiff > 0) {
   return marsYearDiff + " Mars years until birthday";
+  } else {
+    const yearDiffString = marsYearDiff.toString();
+    const fixYearDiff = yearDiffString.replace("-", "");
+    return "Birthday was " + fixYearDiff + " Mars years ago"
+  }
   }
 }
 
