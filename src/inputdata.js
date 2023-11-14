@@ -18,5 +18,8 @@ export class UserInputs {
     return "Birthday was " + fixYearDiff + " Mars years ago"
   }
   }
+  jupiterMathCurrent() {
+    
+  }
 }
 
