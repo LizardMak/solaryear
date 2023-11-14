@@ -19,7 +19,8 @@ export class UserInputs {
   }
   }
   jupiterMathCurrent() {
-    
+  const jupiterAge = this.inputAge / 11.86;
+  return jupiterAge
   }
 }
 
