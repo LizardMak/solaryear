@@ -38,7 +38,9 @@ export class UserInputs {
     return venusAge
   }
   venusMathNotPresent() {
-    
+    const yearDiff = this.inputTargetAge - this.inputAge;
+    const venusYearDiff = yearDiff / .62;
+    return venusYearDiff + " Venus years until birthday";
   }
 
 }
