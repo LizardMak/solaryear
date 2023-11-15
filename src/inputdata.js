@@ -33,9 +33,13 @@ export class UserInputs {
       return "Birthday was " + fixYearDiff + " Jupiter years ago"
     }
     }
-    venusMathCurrent() {
-      const venusAge = this.inputAge / .62;
-      return venusAge
-    }
+  venusMathCurrent() {
+    const venusAge = this.inputAge / .62;
+    return venusAge
+  }
+  venusMathNotPresent() {
+    
+  }
+
 }
 

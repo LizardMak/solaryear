@@ -34,7 +34,7 @@ describe('jupiterMathCurrent', () => {
 
 describe('jupiterMathNotPresent', () => {
 
-  test('It should return how many jupiter years from the current age to the target age', () => {
+  test('It should return how many Jupiter years from the current age to the target age', () => {
     const userData = new UserInputs(21, 31);
     const yearDiff = userData.jupiterMathNotPresent();
     expect(yearDiff).toEqual("0.8431703204047218 Jupiter years until birthday")
@@ -52,5 +52,14 @@ describe('venusMathCurrent', () => {
     const userData = new UserInputs(21, 31);
     const currentAgeVenus = userData.venusMathCurrent();
     expect(currentAgeVenus).toEqual(33.87096774193549)
+  })
+})
+
+describe('venusMathNotPresent', () => {
+
+  test('It should return how many Venus years from the current age to the target age', () => {
+    const userData = new UserInputs(21, 31);
+    const yearDiff = userData.venusMathNotPresent();
+    expect(yearDiff).toEqual("16.129032258064516 Venus years until birthday")
   })
 })
