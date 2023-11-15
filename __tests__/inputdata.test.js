@@ -62,4 +62,9 @@ describe('venusMathNotPresent', () => {
     const yearDiff = userData.venusMathNotPresent();
     expect(yearDiff).toEqual("16.129032258064516 Venus years until birthday")
   })
+  test('It should return a message stating how many Venus years ago an age was if the current age is larger than the target age', () => {
+    const userData = new UserInputs(31, 21);
+    const yearDiff = userData.venusMathNotPresent();
+    expect(yearDiff).toEqual("Birthday was 16.129032258064516 Venus years ago")
+  })
 })
