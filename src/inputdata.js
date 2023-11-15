@@ -25,7 +25,13 @@ export class UserInputs {
   jupiterMathNotPresent() {
     const yearDiff = this.inputTargetAge - this.inputAge;
     const jupiterYearDiff = yearDiff / 11.86;
+    if (jupiterYearDiff > 0) {
     return jupiterYearDiff + " Jupiter years until birthday";
+    } else {
+      const yearDiffString = jupiterYearDiff.toString();
+      const fixYearDiff = yearDiffString.replace("-", "");
+      return "Birthday was " + fixYearDiff + " Jupiter years ago"
+    }
     }
 }
 
