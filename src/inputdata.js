@@ -63,6 +63,5 @@ export class UserInputs {
       return "Birthday was " + fixYearDiff + " Mercury years ago"
     }
     }
-  
 }
 
