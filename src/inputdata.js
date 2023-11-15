@@ -55,9 +55,14 @@ export class UserInputs {
   mercuryMathNotPresent() {
     const yearDiff = this.inputTargetAge - this.inputAge;
     const mercuryYearDiff = yearDiff / .24;
+    if (mercuryYearDiff > 0) {
     return mercuryYearDiff + " Mercury years until birthday";
+    } else {
+      const yearDiffString = mercuryYearDiff.toString();
+      const fixYearDiff = yearDiffString.replace("-", "");
+      return "Birthday was " + fixYearDiff + " Mercury years ago"
+    }
     }
   
-
 }
 
