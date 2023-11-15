@@ -53,8 +53,11 @@ export class UserInputs {
     return mercuryAge
   }
   mercuryMathNotPresent() {
-    
-  }
+    const yearDiff = this.inputTargetAge - this.inputAge;
+    const mercuryYearDiff = yearDiff / .24;
+    return mercuryYearDiff + " Mercury years until birthday";
+    }
+  
 
 }
 
