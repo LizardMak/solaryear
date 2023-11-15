@@ -40,7 +40,13 @@ export class UserInputs {
   venusMathNotPresent() {
     const yearDiff = this.inputTargetAge - this.inputAge;
     const venusYearDiff = yearDiff / .62;
+    if (venusYearDiff > 0) {
     return venusYearDiff + " Venus years until birthday";
+    } else {
+      const yearDiffString = venusYearDiff.toString();
+      const fixYearDiff = yearDiffString.replace("-", "");
+      return "Birthday was " + fixYearDiff + " Venus years ago"
+    }
   }
 
 }
