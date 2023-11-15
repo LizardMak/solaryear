@@ -27,8 +27,8 @@ describe('jupiterMathCurrent', () => {
 
   test('It should return the current age in Jupiter years', () => {
     const userData = new UserInputs(21, 31);
-    const currentAgeMars = userData.jupiterMathCurrent();
-    expect(currentAgeMars).toEqual(1.7706576728499157)
+    const currentAgeJupiter = userData.jupiterMathCurrent();
+    expect(currentAgeJupiter).toEqual(1.7706576728499157)
   })
 })
 
@@ -43,5 +43,14 @@ describe('jupiterMathNotPresent', () => {
     const userData = new UserInputs(31, 21);
     const yearDiff = userData.jupiterMathNotPresent();
     expect(yearDiff).toEqual("Birthday was 0.8431703204047218 Jupiter years ago")
+  })
+})
+
+describe('venusMathCurrent', () => {
+
+  test('It should return the current age in venus years', () => {
+    const userData = new UserInputs(21, 31);
+    const currentAgeVenus = userData.venusMathCurrent();
+    expect(currentAgeVenus).toEqual(33.87096774193549)
   })
 })

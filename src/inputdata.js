@@ -33,5 +33,8 @@ export class UserInputs {
       return "Birthday was " + fixYearDiff + " Jupiter years ago"
     }
     }
+    venusMathCurrent() {
+      
+    }
 }
 
