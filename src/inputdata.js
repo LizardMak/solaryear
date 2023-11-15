@@ -49,7 +49,8 @@ export class UserInputs {
     }
   }
   mercuryMathCurrent() {
-    
+    const mercuryAge = this.inputAge / .24;
+    return mercuryAge
   }
 
 }
