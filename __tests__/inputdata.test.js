@@ -68,3 +68,12 @@ describe('venusMathNotPresent', () => {
     expect(yearDiff).toEqual("Birthday was 16.129032258064516 Venus years ago")
   })
 })
+
+describe('mercuryMathCurrent', () => {
+
+  test('It should return the current age in Mercury years', () => {
+    const userData = new UserInputs(21, 31);
+    const currentAgeMercury = userData.mercuryMathCurrent();
+    expect(currentAgeMercury).toEqual(87.5)
+  })
+})
