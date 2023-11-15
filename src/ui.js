@@ -1,6 +1,6 @@
 import { UserInputs } from "./inputdata";
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   this.window.document.getElementById("form").addEventListener("submit", handleSubmit)
 })
 

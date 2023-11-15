@@ -4,29 +4,29 @@ export class UserInputs {
     this.inputTargetAge = inputTargetAge;
   }
   marsMathCurrent() {
-  const marsAge = this.inputAge / 1.88;
-  return marsAge;
+    const marsAge = this.inputAge / 1.88;
+    return marsAge;
   }
   marsMathNotPresent() {
-  const yearDiff = this.inputTargetAge - this.inputAge;
-  const marsYearDiff = yearDiff / 1.88;
-  if (marsYearDiff > 0) {
-  return marsYearDiff + " Mars years until birthday";
-  } else {
-    const yearDiffString = marsYearDiff.toString();
-    const fixYearDiff = yearDiffString.replace("-", "");
-    return "Birthday was " + fixYearDiff + " Mars years ago"
-  }
+    const yearDiff = this.inputTargetAge - this.inputAge;
+    const marsYearDiff = yearDiff / 1.88;
+    if (marsYearDiff > 0) {
+      return marsYearDiff + " Mars years until birthday";
+    } else {
+      const yearDiffString = marsYearDiff.toString();
+      const fixYearDiff = yearDiffString.replace("-", "");
+      return "Birthday was " + fixYearDiff + " Mars years ago"
+    }
   }
   jupiterMathCurrent() {
-  const jupiterAge = this.inputAge / 11.86;
-  return jupiterAge
+    const jupiterAge = this.inputAge / 11.86;
+    return jupiterAge
   }
   jupiterMathNotPresent() {
     const yearDiff = this.inputTargetAge - this.inputAge;
     const jupiterYearDiff = yearDiff / 11.86;
     if (jupiterYearDiff > 0) {
-    return jupiterYearDiff + " Jupiter years until birthday";
+      return jupiterYearDiff + " Jupiter years until birthday";
     } else {
       const yearDiffString = jupiterYearDiff.toString();
       const fixYearDiff = yearDiffString.replace("-", "");
@@ -41,7 +41,7 @@ export class UserInputs {
     const yearDiff = this.inputTargetAge - this.inputAge;
     const venusYearDiff = yearDiff / .62;
     if (venusYearDiff > 0) {
-    return venusYearDiff + " Venus years until birthday";
+      return venusYearDiff + " Venus years until birthday";
     } else {
       const yearDiffString = venusYearDiff.toString();
       const fixYearDiff = yearDiffString.replace("-", "");
@@ -56,12 +56,12 @@ export class UserInputs {
     const yearDiff = this.inputTargetAge - this.inputAge;
     const mercuryYearDiff = yearDiff / .24;
     if (mercuryYearDiff > 0) {
-    return mercuryYearDiff + " Mercury years until birthday";
+      return mercuryYearDiff + " Mercury years until birthday";
     } else {
       const yearDiffString = mercuryYearDiff.toString();
       const fixYearDiff = yearDiffString.replace("-", "");
       return "Birthday was " + fixYearDiff + " Mercury years ago"
     }
-    }
+  }
 }
 
