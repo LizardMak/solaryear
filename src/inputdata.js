@@ -34,7 +34,8 @@ export class UserInputs {
     }
     }
     venusMathCurrent() {
-      
+      const venusAge = this.inputAge / .62;
+      return venusAge
     }
 }
 
