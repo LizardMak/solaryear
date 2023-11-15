@@ -77,3 +77,12 @@ describe('mercuryMathCurrent', () => {
     expect(currentAgeMercury).toEqual(87.5)
   })
 })
+
+describe('mercuryMathNotPresent', () => {
+
+  test('It should return how many Mercury years from the current age to the target age', () => {
+    const userData = new UserInputs(21, 31);
+    const yearDiff = userData.mercuryMathNotPresent();
+    expect(yearDiff).toEqual("41.66666666666667 Mercury years until birthday")
+  })
+})

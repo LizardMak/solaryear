@@ -52,6 +52,9 @@ export class UserInputs {
     const mercuryAge = this.inputAge / .24;
     return mercuryAge
   }
+  mercuryMathNotPresent() {
+    
+  }
 
 }
 
