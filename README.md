@@ -16,7 +16,7 @@
 
 ## Description
 
-_{This program calculates the age of a user and the amount of time difference between a future or past year.}_
+_{This program is a webpage that will collect the user's current age and convert it into their age on various planets, user's can also optionally enter a future or past age to calculate the time difference from their current age to their future or past age on various planets.}_
 
 ## Setup/Installation Requirements
 
@@ -24,8 +24,8 @@ _{This program calculates the age of a user and the amount of time difference be
 * _Start blank project in VSCode_
 * _Clone GitHub repo to VSCode using terminal_
 * _Open VSCode terminal in project_
-* _Type 'NPM Install' in Terminal and hit enter_
-* __
+* _Type 'npm install' in Terminal and hit enter_
+* _Type 'npm run start' in Terminal and hit enter_
 
 ## Known Bugs
 
