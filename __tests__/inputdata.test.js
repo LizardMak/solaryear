@@ -85,4 +85,9 @@ describe('mercuryMathNotPresent', () => {
     const yearDiff = userData.mercuryMathNotPresent();
     expect(yearDiff).toEqual("41.66666666666667 Mercury years until birthday")
   })
+  test('It should return a message stating how many Mercury years ago an age was if the current age is larger than the target age', () => {
+    const userData = new UserInputs(31, 21);
+    const yearDiff = userData.mercuryMathNotPresent();
+    expect(yearDiff).toEqual("Birthday was 41.66666666666667 Mercury years ago")
+  })
 })
