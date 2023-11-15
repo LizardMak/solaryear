@@ -39,4 +39,9 @@ describe('jupiterMathNotPresent', () => {
     const yearDiff = userData.jupiterMathNotPresent();
     expect(yearDiff).toEqual("0.8431703204047218 Jupiter years until birthday")
   })
+  test('It should return a message stating how many Jupiter years ago an age was if the current age is larger than the target age', () => {
+    const userData = new UserInputs(31, 21);
+    const yearDiff = userData.jupiterMathNotPresent();
+    expect(yearDiff).toEqual("Birthday was 0.8431703204047218 Jupiter years ago")
+  })
 })
