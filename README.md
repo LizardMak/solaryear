@@ -23,7 +23,9 @@ _{This program calculates the age of a user and the amount of time difference be
 * _Ensure that VSCode is installed_
 * _Start blank project in VSCode_
 * _Clone GitHub repo to VSCode using terminal_
-* _Do any calculations by modifying the __tests__ folder to desired inputs and using NPM run test in the console_
+* _Open VSCode terminal in project_
+* _Type 'NPM Install' in Terminal and hit enter_
+* __
 
 ## Known Bugs
 
